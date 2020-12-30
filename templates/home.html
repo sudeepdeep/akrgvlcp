@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<style type="text/css">
+	body{
+		background-color: #1E90FF;
+	}
+	.logo img{
+		width:80%;
+		height:120px;
+	}
+
+ .heading{
+		font-family: cursive;
+		 background-color: #0A1857;
+		  color:white;
+		   height: 90px;
+		    text-align: center;
+		    
+	}
+
+	
+
+@media screen and (max-width: 1060px) {
+.logo img{
+	width: 80%;
+	height: 120px;
+
+}
+.heading{
+	color:white;
+	height: 120px;
+}
+}
+@media screen and (max-width: 1018px) {
+	.logo img{
+	width: 80%;
+	height: 120px;
+
+}
+.heading{
+	color:black;
+	height: 120px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+}
+
+@media screen and (max-width: 768px) {
+	.logo img{
+	width: 80%;
+	height: 120px;
+
+}
+.heading{
+	color:white;
+	height: 120px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+}
+@media screen and (max-width: 668px) {
+	.logo img{
+	width: 80%;
+	height: 120px;
+
+}
+ .heading{
+	color:white;
+	height: 120px;
+	text-align: center;
+}
+}
+@media screen and (max-width: 568px) {
+	.logo img{
+	width: 90%;
+	height: 100px;
+	margin-left:-80px; 
+
+}
+.heading{
+	width:100%;
+	height: 100px;
+}
+.heading h1{
+	color:white;
+	font-size: 25px;
+	text-align: center;
+
+}
+}
+@media screen and (max-width: 548px) {
+	.logo img{
+	width: 90%;
+	height: 100px;
+	margin-left:-80px; 
+
+}
+.heading{
+	width:auto;
+	height: 100px;
+}
+.heading h1{
+	color:white;
+	font-size: 25px;
+	
+	float: left;
+	padding-left: 30px;
+	text-align: center;
+}
+.heading1 h1{
+	width: 30%;
+	
+}
+.image2 img{
+	
+
+	width: 180px;
+	height: 300px;
+}
+}
+
+
+
+</style>
+<body>
+<table width="100%">
+	<tr>
+		<td colspan  = "2" align="center">
+			<div class = "logo">
+			<img src = "{{url_for('static',filename = 'images/unnamed.png')}}"></div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan  = "2">
+			<div class = "heading">
+			<h1>Welcome to the Virtual lab of <br>AKRG CET</h1></div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%" height="50px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width = "40%">
+			<div class = "heading1">
+			<h1 style="font-family:cursive; color:white;">Here you can perform your Lab Works from Home!!</h1>
+			<h1 style="font-family: cursive;color:white;">We are providing different compilers to work 
+				on your lab assignments and to finish your programs</h1></div>
+		</td>
+
+		<td align="center" width="60%">
+			<div class = "image2">
+			<img src = "{{url_for('static',filename = 'images/student.jpg')}}" width="100%" height="400px;"></div>
+		</td>
+
+	</tr>
+
+	<tr>
+		<td colspan="2" align="center">
+			<h1 style="font-family:candara; color:white;">Available Compilers</h1>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/c" ><img src = "{{url_for('static',filename = 'images/cc.png')}}" height="200px" width="200px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/c1"><img src = "{{url_for('static',filename = 'images/c+++.png')}}" height="180px" width="180px;" ></a>
+			
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/python"><img src = "{{url_for('static',filename = 'images/python.png')}}" height="180px" width="200px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/java"><img src = "{{url_for('static',filename = 'images/java1.png')}}" height="180px" width="180px;" ></a>
+		</td>
+	</tr>
+<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/ds"><img src = "{{url_for('static',filename = 'images/ds.png')}}" height="250px" width="250px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/ads"><img src = "{{url_for('static',filename = 'images/ads.png')}}" height="200px" width="200px;" ></a>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/htm"><img src = "{{url_for('static',filename = 'images/html.png')}}" height="180px" width="200px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/sql"><img src = "{{url_for('static',filename = 'images/sql2.png')}}" height="350px" width="350px;" ></a>
+		</td>
+	</tr>
+<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/ml"><img src = "{{url_for('static',filename = 'images/ml.png')}}" height="180px" width="200px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "/rp"><img src = "{{url_for('static',filename = 'images/rp.png')}}" height="180px" width="180px;" ></a>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%">
+			<a href = "/nix"><img src = "{{url_for('static',filename = 'images/nix.png')}}" height="130px" width="180px;"></a>
+		</td>
+		<td  align="center" width="50%">
+			<a href = "#"></a>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" width="50%" height="100px;">
+		</td>
+		<td  align="center" width="50%">
+		</td>
+	</tr>
+</table>
+<center>
+<h2>To Submit your assingment Please Click Submit</h2>
+<form action=”mailto:akrgdob@gmail.com”
+
+
+method=”POST”
+
+
+enctype=”multipart/form-data”
+
+
+name=”EmailForm”>
+	
+
+	<input type="submit" name="submit">
+</form>
+</center>
+
+
+<label style="font-size: 50px; font-family: candara; color: white;">Sincere thanks to </label>
+<marquee >
+	<a href = "https://kvrsoftwares.blogspot.com/p/menu.html" target="_blank"><img src = "{{url_for('static',filename = 'images/kvr.jpg')}}" width="300px" height="250px;"></a>
+	<a href = "https://www.programiz.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/pz.png')}}" width="300px" height="250px;"></a>
+	<a href = "https://www.javatpoint.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/javatpoint.png')}}" width="300px" height="250px;"></a>
+	<a href = "https://www.onlinegdb.com/" target="_blank"><img src = "{{url_for('static',filename = 'images/online.png')}}" width="300px" height="250px;"></a>
+	<a href = "https://paiza.io/en" target="_blank"><img src = "{{url_for('static',filename = 'images/paiza.png')}}" width="300px" height="250px;"></a>
+</marquee>
+<footer style="width: auto; height: 50px; text-align: center; color: white;font-family: candara;font-size: 20px;background-color: #031458; padding-top: 25px;">©CopyRight By CSE Students(2k17 - 2021)</footer>
+</body>
+</html>
